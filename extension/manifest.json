@@ -4,7 +4,7 @@
     "short_name": "new tab",
     "version":"1.0",
     "description":"다양한 기능을 가질 예정인 new tab extension",
-    "crome_url_overrides":{
+    "chrome_url_overrides":{
         "newtab":"index.html"
     }
 }
