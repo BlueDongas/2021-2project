@@ -6,5 +6,10 @@
     "description":"다양한 기능을 가질 예정인 new tab extension",
     "chrome_url_overrides":{
         "newtab":"index.html"
+    },
+    "icons": {
+    "16": "icon/16.png",
+    "48": "icon/48.png",
+    "128": "icon/128.png"
     }
 }
