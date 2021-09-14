@@ -5,8 +5,19 @@
     height: 50px;
 }
 
-#container{
-    display: flex;
-    justify-content: center;
-    align-items:center;
+.container{
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
 }
+
+.container img{
+    width: 70%;
+    height: auto;
+}
+
+/*
+.과 # 차이!
+.은 class 일때!
+#은 id 일때!
+*/
