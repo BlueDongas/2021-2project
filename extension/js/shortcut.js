@@ -1,12 +1,11 @@
-const WebName
-const URLADDR
-
 function shortcut(){
-    WebName = prompt("이름");
-    URLADDR = prompt("URL");
+    const WebName = prompt("이름","as");
+    const URLADDR = prompt("URL","as");
         
     document.write("<h1> WebName :" + WebName + " </h1>");
     document.write("<h1> URL :" + URLADDR + " </h1>");
+
+    createDiv();
 }
 
 function createDiv() {
