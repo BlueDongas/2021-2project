@@ -1,10 +1,11 @@
-function shortcut(){
-    const WebName = prompt("이름","as");
-    const URLADDR = prompt("URL","as");
-        
-    document.write("<h1> WebName :" + WebName + " </h1>");
-    document.write("<h1> URL :" + URLADDR + " </h1>");
+let img = document.getElementById('img');
 
+document.onclick = shortcut;
+
+function shortcut(){
+    const WebName = prompt("이름","바로가기");
+    const URLADDR = prompt("URL","주소");
+        
     createDiv();
 }
 
