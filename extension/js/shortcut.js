@@ -15,9 +15,9 @@ function createDiv(WebName, URLADDR) {
     const newDiv = document.createElement('div');
     
     const newText = document.createTextNode(WebName);
-    
+
     newDiv.appendChild(newText);
-    newDiv.onclick = addr(URLADDR);
+    newDiv.onclick = location.href="https://"+URLADDR;
     
     document.body.appendChild(newDiv);
 } 
@@ -26,8 +26,4 @@ function deleteDiv() {
     const div = document.getElementById('my_div');
 
     div.remove();
-}
-
-function addr(ADDR){
-    location.href="https://"+ADDR
 }
