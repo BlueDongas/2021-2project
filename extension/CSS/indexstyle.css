@@ -21,22 +21,21 @@
     left: 0;
     width: 100%;
     bottom: 0;
+    padding: 6px;
 }
 
 #short{
-    width: 100%; 
+    width: 100%;
     text-align: center;
 }
 
-#img{
-    margin-top: 7px;
-    width: 3%; 
+.shortcut{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#plus{
+    width: 50px; 
     max-width: 760px; 
     vertical-align: middle;
 }
-
-/*
-.과 # 차이!
-.은 class 일때!
-#은 id 일때!
-*/
