@@ -29,13 +29,12 @@
     text-align: center;
 }
 
-.shortcut{
-    display: inline-block;
-    margin: 0 10px;
+img{
+    width: 70px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
-#plus{
-    width: 50px; 
-    max-width: 760px; 
-    vertical-align: middle;
+#fuze{
+    width: 100%;
 }

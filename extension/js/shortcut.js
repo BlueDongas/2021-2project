@@ -1,65 +1,49 @@
-// let img = document.getElementById('img');
-
-// document.onclick = shortcut;
-
-// document.getElementById('img').onclick = function() {
-// function shortcut(){
-//     const WebName = prompt("이름","바로가기");
-//     const URLADDR = prompt("URL","주소");
-    
-//     localStorage.setItem('name', WebName)
-//     localStorage.setItem('url', URLADDR)
-//     createDiv(WebName, URLADDR);
-// }
-
-// function createDiv(WebName, URLADDR) {
-//     const newDiv = document.createElement('div');
-    
-//     const newText = document.createTextNode(WebName);
-
-//     newDiv.appendChild(newText);
-//     // newDiv.onclick = location.href="https://"+URLADDR;
-    
-//     document.body.appendChild(newDiv);
-// } 
-
-// function deleteDiv() {
-//     const div = document.getElementById('my_div');
-
-//     div.remove();
-// }
-
-let WebName;
-let URLADDR;
-
 document.addEventListener('DOMContentLoaded', function() {
     var hehe = document.getElementById('plus');
-
-    function addDiv(){
+    var clear = document.getElementById('clear');
+    let count = parseInt(localStorage.getItem('cnt'));
+    
+    function addDiv(WebName, URLADDR){
         const newName = document.createElement('div');
         const newURL = document.createElement('div');
-
-        const shortcut = document.createElement('div');
-        
-        shortcut.className = "shortcut";
+        const newA = document.createElement('a');
+        const newImg = document.createElement('img');
         
         newName.innerHTML = WebName;
         newURL.innerHTML = URLADDR;
+        newA.appendChild(newImg);
+        newA.setAttribute("href", 'https://'+URLADDR);
+        newImg.setAttribute("src",'http://'+URLADDR+"/favicon.ico");
+        newImg.width = 70;
+        newImg.height = 70;
+        
+        document.getElementById('short').appendChild(newA);
+    }
 
-        shortcut.appendChild(newName);
-        shortcut.appendChild(newURL);
-
-        document.getElementById('short').appendChild(shortcut);
+    for (i=1; i <= count; i++){
+        let name = localStorage.getItem('name'+i);
+        let url = localStorage.getItem('url'+i);
+        console.log(name, url);
+        addDiv(name, url);
     }
 
     hehe.addEventListener('click', function() {
-        WebName = prompt("이름","바로가기");
-        URLADDR = prompt("URL","주소");
+        let WebName = prompt("이름","바로가기");
+        let URLADDR = prompt("URL","주소");
+        count = count + 1;
+        localStorage.setItem('cnt', count);
+        
+        let name = "name"+count;
+        let url = "url"+count;
 
-        localStorage.setItem('name', WebName);
-        localStorage.setItem('url', URLADDR);
+        localStorage.setItem(name, WebName);
+        localStorage.setItem(url, URLADDR);
 
-        addDiv();
+        addDiv(WebName, URLADDR);
     });
-    
+    clear.addEventListener('click', function(){
+        localStorage.clear();
+        localStorage.setItem('cnt', 0);
+        location.reload();
+    });
 });
