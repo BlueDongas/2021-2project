@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./CSS/settingstyle.css">
     <script src="./js/clock.js"></script>
+    <script src="./js/shortcut.js"></script>
     <title>Setting</title>
 </head>
 <body>
@@ -14,6 +15,19 @@
             <h2>D-day Setting</h2>
             <input type = 'date' id='dday'> <br>
             <button type='button' onclick="">Set</button>
+        </div>
+        <div id=setting-shortcut>
+            바로가기 생성
+            <form>
+                URL 주소 : <input type="text" name="url" id="url-addr">
+                <button type="button" id="shortcut_button">생성</button>
+            </form>
+            바로가기 삭제 
+            <form>
+                번호 : <input type="text" name="del" id="url-del">
+                <button type="button" id="shortcut_del">삭제</button>
+                <button type="button" id="shortcut_clear">초기화</button>
+            </form>
         </div>
     </div>
 </body>
