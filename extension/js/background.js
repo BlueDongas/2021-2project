@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded",function(){
         });
     }
     else if((window.location.href).includes('index.html')){
-        document.getElementById('body').style.background = "url('"+localStorage.getItem('Background-url')+"') no-repeat 50% 50%";
+        var body = document.getElementById('body');
+        body.style.background = "url('"+localStorage.getItem('Background-url')+"') no-repeat 50% 50%";
+        body.style.backgroundSize = "contain";
     }
 });
