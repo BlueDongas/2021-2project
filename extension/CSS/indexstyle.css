@@ -38,3 +38,8 @@ img{
 #fuze{
     width: 100%;
 }
+
+#day_clock{
+    font-size: x-large;
+    font-weight: 700;
+}
