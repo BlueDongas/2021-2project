@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded",function(){
             localStorage.setItem('timeoption',timeOption);
             localStorage.setItem('Dday-name',name);
             localStorage.setItem('Dday',dday);
-            location.includes('index.html').reload();
+            location.reload();
         });
     }
-    else{
+    else if((window.location.href).includes('index.html')){
         function DisplayClock(){
             const dayClock = document.getElementById('day_clock');
             

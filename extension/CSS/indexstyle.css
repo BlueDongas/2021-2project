@@ -1,8 +1,8 @@
 #settingicon{
     position: absolute;
     right: 5px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
 }
 
 .middle{
@@ -42,4 +42,9 @@ img{
 #day_clock{
     font-size: x-large;
     font-weight: 700;
+}
+
+#body{
+    height: 810px;
+    background-size: cover;
 }
