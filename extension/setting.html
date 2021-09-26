@@ -12,21 +12,21 @@
 <body>
     <div id="setting">
         <div id=setting-clock>
-            <h2>D-day Setting</h2>
-            <input type = 'date' id='dday'> <br>
-            <button type='button' onclick="">Set</button>
+            <h3>D-day Setting</h3>
+            <input type = 'date' id='dday' name=Dday>
+            <button type='button' id="setting_dday">Set</button>
         </div>
         <div id=setting-shortcut>
-            바로가기 생성
+            <h3>Create Shortcuts</h3>
             <form>
-                URL 주소 : <input type="text" name="url" id="url-addr">
-                <button type="button" id="shortcut_button">생성</button>
+                <input type="text" name="url" id="url-addr" placeholder="url address">
+                <button type="button" id="shortcut_button">Create</button>
             </form>
-            바로가기 삭제 
+            <h3>Delete Shortcuts</h3>
             <form>
-                번호 : <input type="text" name="del" id="url-del">
-                <button type="button" id="shortcut_del">삭제</button>
-                <button type="button" id="shortcut_clear">초기화</button>
+                <input type="text" name="del" id="url-del" placeholder="shortcut number">
+                <button type="button" id="shortcut_del">Delete</button>
+                <button type="button" id="shortcut_clear">Reset</button>
             </form>
         </div>
     </div>
