@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded",function(){
     let today = new Date();
+    let hours = today.getHours();
+    let minute = today.getMinutes();
+    let second = today.getSeconds();
 
     if((window.location.href).includes('setting.html')){  
         var setbtn = document.getElementById('setting_dday');
@@ -38,6 +41,10 @@ document.addEventListener("DOMContentLoaded",function(){
                 dayClock.innerHTML = name+"까지 "+ minute + "분";
             }
         }
+
+        // function DisplayNowClock(){
+            
+        // }
 
         function init(){
             DisplayClock();
