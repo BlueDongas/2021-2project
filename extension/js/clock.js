@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(){
             else if(localStorage.getItem('timeoption') == "Hour"){
                 dayClock.innerHTML = name+"까지 "+ hour + "시간";
             }
-            else if(localStorage.getItem('timeoption') == "Minute"){
+            else if(localStorage.getItem('timeoption') == "minute"){
                 dayClock.innerHTML = name+"까지 "+ minute + "분";
             }
         }
