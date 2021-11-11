@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded",function(){
+    //시계 설정
     let today = new Date();
     let hours = today.getHours();
     let minute = today.getMinutes();
@@ -19,6 +20,8 @@ document.addEventListener("DOMContentLoaded",function(){
             localStorage.setItem('Dday',dday);
             location.reload();
         });
+
+        // 배경 설정
         var backbtn = document.getElementById('setting_background');
         var closebtn = document.getElementById('closebtn');
 
@@ -34,7 +37,7 @@ document.addEventListener("DOMContentLoaded",function(){
         });
     }
     else if((window.location.href).includes('index.html')){
-        function DisplayClock(){
+        function DisplayClock(){ //시계 출력
             const dayClock = document.getElementById('day_clock');
             
             var name = localStorage.getItem('Dday-name');
