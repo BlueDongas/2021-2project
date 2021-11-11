@@ -19,6 +19,19 @@ document.addEventListener("DOMContentLoaded",function(){
             localStorage.setItem('Dday',dday);
             location.reload();
         });
+        var backbtn = document.getElementById('setting_background');
+        var closebtn = document.getElementById('closebtn');
+
+        backbtn.addEventListener('click',function(){
+            var backurl = document.querySelector('#background-url').value;
+            console.log(backurl);
+            localStorage.setItem('Background-url',backurl);
+            location.reload();
+        });
+
+        closebtn.addEventListener('click',function(){
+            history.back();
+        });
     }
     else if((window.location.href).includes('index.html')){
         function DisplayClock(){
@@ -40,6 +53,10 @@ document.addEventListener("DOMContentLoaded",function(){
             else if(localStorage.getItem('timeoption') == "minute"){
                 dayClock.innerHTML = name+"까지 "+ minute + "분";
             }
+
+            var body = document.getElementById('body');
+            body.style.background = "url('"+localStorage.getItem('Background-url')+"') no-repeat 50% 50%";
+            body.style.backgroundSize = "contain";
         }
 
         // function DisplayNowClock(){
