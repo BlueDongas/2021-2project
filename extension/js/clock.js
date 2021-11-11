@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
         function init(){
             DisplayClock();
-            setInterval(DisplayClock,1000*60);
+            setInterval(DisplayClock(),1000*60);
         }
 
         init();
