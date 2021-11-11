@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded",function(){
                 dayClock.innerHTML = name+"까지 "+ minute + "분";
             }
 
-            var body = document.getElementById('body');
+            var body = document.getElementById('content');
             body.style.background = "url('"+localStorage.getItem('Background-url')+"') no-repeat 50% 50%";
             body.style.backgroundSize = "contain";
         }
