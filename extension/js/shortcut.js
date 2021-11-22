@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newURL.innerHTML = url_addr;
             newA.appendChild(newImg);
             newA.setAttribute("href", url_addr);
-            newImg.setAttribute("src", url_addr+"/favicon.ico");
+            newImg.setAttribute("src", "https://www.google.com/s2/favicons?domain="+url_addr);
             newImg.width = 70;
             newImg.height = 70;
             
