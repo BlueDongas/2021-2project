@@ -48,13 +48,13 @@ document.addEventListener("DOMContentLoaded",function(){
             var minute = Math.floor((gap%(1000*60*60))/(1000*60))+hour*60;
 
             if(localStorage.getItem('timeoption') == "Day"){
-                dayClock.innerHTML = name+"까지 "+ day + "일 ";
+                dayClock.innerHTML = name+"까지 "+ (day+1) + "일 ";
             }
             else if(localStorage.getItem('timeoption') == "Hour"){
-                dayClock.innerHTML = name+"까지 "+ hour + "시간";
+                dayClock.innerHTML = name+"까지 "+ (hour+1) + "시간";
             }
             else if(localStorage.getItem('timeoption') == "minute"){
-                dayClock.innerHTML = name+"까지 "+ minute + "분";
+                dayClock.innerHTML = name+"까지 "+ (minute+1) + "분";
             }
 
             var body = document.getElementById('content');
@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded",function(){
 
         function init(){
             DisplayClock();
-            setInterval(DisplayClock(),1000*60);
         }
 
         init();
