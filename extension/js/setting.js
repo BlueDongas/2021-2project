@@ -58,7 +58,8 @@ document.addEventListener("DOMContentLoaded",function(){
             }
 
             var body = document.getElementById('container');
-            body.style.background = "url('"+localStorage.getItem('Background-url')+"') no-repeat 50% 50%";
+            body.style.background = "url('"+localStorage.getItem('Background-url')+"')";
+            body.style.backgroundRepeat = "no-repeat"
             body.style.backgroundSize = "cover";
             body.style.backgroundPosition = "center"
         }
