@@ -57,9 +57,10 @@ document.addEventListener("DOMContentLoaded",function(){
                 dayClock.innerHTML = name+"까지 "+ (minute+1) + "분";
             }
 
-            var body = document.getElementById('content');
+            var body = document.getElementById('container');
             body.style.background = "url('"+localStorage.getItem('Background-url')+"') no-repeat 50% 50%";
-            body.style.backgroundSize = "contain";
+            body.style.backgroundSize = "cover";
+            body.style.backgroundPosition = "center"
         }
 
         // function DisplayNowClock(){
