@@ -48,9 +48,7 @@ img{
     height: 810px;
     background-size: cover;
 } */
-
 body{
-    margin: 0px;
     width : 1920px;
     height: 937px;
 }
@@ -74,8 +72,10 @@ body{
     font-weight: 700;
 }
 #content{
+    margin:5px;
     width: 100%;
     height: 85%;
+    
 }
 #short{
     position: absolute;
@@ -86,4 +86,7 @@ body{
     width: 100%;
     height: 10%;
     background-color: black;
+}
+#searchbar{
+    margin:5px;
 }
