@@ -89,5 +89,10 @@ body{
     background-color: black;
 }
 #searchbar{
-    padding:5px;
+    position : absolute;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 100px;
+    transform: translate(-50%, -50%)
 }
