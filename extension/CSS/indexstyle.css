@@ -90,9 +90,6 @@ body{
 }
 #searchbar{
     padding:5px;
-}
-.search{
-    padding:5px;
     position : absolute;
     left: 50%;
     top: 50%;
