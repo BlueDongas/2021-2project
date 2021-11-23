@@ -35,6 +35,27 @@ document.addEventListener("DOMContentLoaded",function(){
         closebtn.addEventListener('click',function(){
             history.back();
         });
+
+        // D-day Color
+        // var f_color;
+        // var defaultColor = "#0000ff";
+
+        // window.addEventListener("load", startup, false);
+
+        // function startup(){
+        //     f_color = document.querySelector("#f_color");
+        //     f_color.value = defaultColor;
+        //     f_color.addEventListener("input", updateFirst, false);
+        //     f_color.addEventListener("change", updateAll, false);
+        //     f_color.select();
+        // }
+        // function updateFirst(event) {
+        //     var p = document.querySelector("p");
+          
+        //     if (p) {
+        //         p.style.color = event.target.value;
+        //     }
+        // }
     }
     else if((window.location.href).includes('index.html')){
         function DisplayClock(){ //시계 출력
