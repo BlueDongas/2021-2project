@@ -56,7 +56,11 @@ document.addEventListener("DOMContentLoaded",function(){
             else if(localStorage.getItem('timeoption') == "minute"){
                 dayClock.innerHTML = name+"까지 "+ (minute+1) + "분";
             }
-
+            
+            
+        }
+        
+        function Displaybackground(){// 배경 출력
             var body = document.getElementById('container');
             body.style.background = "url('"+localStorage.getItem('Background-url')+"')";
             body.style.backgroundRepeat = "no-repeat"
@@ -70,6 +74,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
         function init(){
             DisplayClock();
+            Displaybackground();
         }
 
         init();
