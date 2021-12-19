@@ -72,6 +72,9 @@ body{
 #day_clock{
     font-size: x-large;
     font-weight: 700;
+    /* background: linear-gradient(to right, blue, pink); */
+    /* color: transparent;
+    -webkit-background-clip: text; */
 }
 #content{
     width: 100%;
