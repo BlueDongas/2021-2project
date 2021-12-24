@@ -1,53 +1,3 @@
-/* #settingicon{
-    position: absolute;
-    right: 5px;
-    width: 30px;
-    height: 30px;
-}
-
-.middle{
-    position: absolute; 
-    left: 50%; 
-    top: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center;
-}
-
-#box{
-    height: 70px;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    left: 0;
-    width: 100%;
-    bottom: 0;
-    padding: 6px;
-}
-
-#short{
-    width: 100%;
-    text-align: center;
-}
-
-img{
-    width: 70px;
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-#fuze{
-    width: 100%;
-}
-
-#day_clock{
-    font-size: x-large;
-    font-weight: 700;
-}
-
-#body{
-    height: 810px;
-    background-size: cover;
-} */
 body{
     margin: 0;
     padding: 0;
@@ -55,8 +5,8 @@ body{
     height: 937px;
 }
 #container{
-    width : 1920px;
-    height: 937px;
+    width : 100%;
+    height: 100%;
 }
 
 #header{
@@ -72,9 +22,6 @@ body{
 #day_clock{
     font-size: x-large;
     font-weight: 700;
-    /* background: linear-gradient(to right, blue, pink); */
-    /* color: transparent;
-    -webkit-background-clip: text; */
 }
 #content{
     width: 100%;

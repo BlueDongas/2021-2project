@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded",function(){
             var body = document.getElementById('container');
             body.style.background = "url('"+localStorage.getItem('Background-url')+"')";
             body.style.backgroundRepeat = "no-repeat"
-            body.style.backgroundSize = "cover";
-            body.style.backgroundPosition = "center"
+            body.style.backgroundSize = "100% 100%";
+            body.style.backgroundPosition = "center center"
         }
 
         // function DisplayNowClock(){
