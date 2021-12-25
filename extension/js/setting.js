@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded",function(){
         // D-day Color
         var f_color = document.querySelector('.first-color');
         var s_color = document.querySelector('.second-color');
-        // var defaultColor = "#0000ff";
 
         var Set_color = document.getElementById('color_picker');
 
@@ -69,7 +68,7 @@ document.addEventListener("DOMContentLoaded",function(){
             }
             else if(localStorage.getItem('timeoption') == "minute"){
                 dayClock.innerHTML = name+"까지 "+ (minute+1) + "분";
-            }           
+            }
         }
 
         function Displaybackground(){// 배경 출력
