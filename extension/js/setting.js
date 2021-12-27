@@ -39,12 +39,17 @@ document.addEventListener("DOMContentLoaded",function(){
         // D-day Color
         var f_color = document.querySelector('.first-color');
         var s_color = document.querySelector('.second-color');
+        var Dir_select = document.querySelector('.direction');
 
         var Set_color = document.getElementById('color_picker');
 
+
         Set_color.addEventListener('click',function(){
+            select = Dir_select.options[Dir_select.selectedIndex].text;
+            
             localStorage.setItem('font_color_1', f_color.value);
             localStorage.setItem('font_color_2', s_color.value);
+            localStorage.setItem('direction', select);
             location.reload();
         });
 
@@ -88,8 +93,9 @@ document.addEventListener("DOMContentLoaded",function(){
 
             var fcolor = localStorage.getItem('font_color_1');
             var scolor = localStorage.getItem('font_color_2');
+            var direc = localStorage.getItem('direction');
 
-            T_clock.setAttribute("style", "background:linear-gradient(to bottom right" + "," + fcolor + "," + scolor + "); color: transparent;-webkit-background-clip:text");
+            T_clock.setAttribute("style", "background:linear-gradient("+ direc + "," + fcolor + "," + scolor + "); color: transparent;-webkit-background-clip:text");
         }
 
         function init(){
