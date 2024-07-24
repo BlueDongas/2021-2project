@@ -6,6 +6,8 @@
         "default_popup": "index.html"
     },
     "permissions": [
+        "tabs",
+        "background",
         "scripting"
     ],
     "host_permissions": [
