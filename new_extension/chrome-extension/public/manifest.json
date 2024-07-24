@@ -8,7 +8,9 @@
     "permissions": [
         "tabs",
         "background",
-        "scripting"
+        "scripting",
+        "storage",
+        "activeTab"
     ],
     "host_permissions": [
         "http://*/*",
